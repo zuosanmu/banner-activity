@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+// import { FormsModule } from '@angular/forms';
+// import { HttpModule } from '@angular/http';
+import { RouterModule } from '@angular/router';
+import 'hammerjs';
 
 import { AppComponent } from './app.component';
 
@@ -11,8 +13,11 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule,
-    HttpModule
+    // HttpModule,
+    RouterModule.forRoot([{
+      path:'activity-list',
+      loadChildren:'./activity-list/activity-list.module#ActivityListModule'
+    }])
   ],
   providers: [],
   bootstrap: [AppComponent]

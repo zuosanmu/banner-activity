@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+
+// @import '~_@angular_material@2.0.0-beta.5@@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+// @import '~https://fonts.googleapis.com/icon?family=Material+Icons';
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+}
+*{
+  padding: 0px;
+  margin: 0px;
+}
+.grid{
+  display: flex;
+  flex-direction: column;
+}
+.text-center{
+  text-align: center;
+}
+//按钮
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #ffc400;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #ffc400;
+  transform: translateY(4px);
+}

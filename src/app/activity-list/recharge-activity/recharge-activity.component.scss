@@ -1,0 +1,31 @@
+.container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #d32f2f;
+}
+.btn{
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+font-size: 0.44rem;
+  color: #d32f2f;
+  background-color: #ffea00;
+}
+.detail{
+  margin-top: 0.8rem;
+  padding: 0.2rem;
+  color: #fff;
+   font-size: 0.3rem;
+  line-height: 0.5rem;
+  .in{
+    text-align: justify;
+     padding: 0.2rem;
+background-color: #eb3d33;
+  border-radius: 0.2rem;
+  .zhu{
+    margin-top: 0.6rem;
+    font-size: 0.24rem;
+  }
+  }
+}
